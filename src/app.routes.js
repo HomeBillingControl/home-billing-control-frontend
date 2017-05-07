@@ -5,15 +5,22 @@ export default routesConfig;
 
 /** @ngInject */
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  }).hashPrefix('!');
   $urlRouterProvider.otherwise('/');
+  $locationProvider.html5Mode(false);
+  /*$locationProvider.html5Mode({
+    enabled: false,
+    requireBase: true
+  }).hashPrefix('!');*/
+
   $stateProvider
     .state({
       name: 'login',
       url: '/',
       component: 'loginForm'
+    })
+    .state({
+      name: 'home',
+      url: '/home',
+      component: 'homeForm'
     });
 }

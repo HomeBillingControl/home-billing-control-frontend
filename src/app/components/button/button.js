@@ -2,7 +2,9 @@
  * Created by crist on 05/05/2017.
  */
 export default class ButtonController {
-
+  constructor($state) {
+    this._$state = $state;
+  }
 }
 
 export const Button = {
@@ -10,6 +12,7 @@ export const Button = {
   controller: ButtonController,
   bindings: {
     label: '@',
-    btnClass: '@'
+    btnClass: '@',
+    bntAction: '='
   }
 };

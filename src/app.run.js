@@ -4,5 +4,6 @@
 export default runConfig;
 
 /** @ngInject */
-function runConfig() {
+function runConfig($rootScope, constants) {
+  $rootScope.consts = constants;
 }
