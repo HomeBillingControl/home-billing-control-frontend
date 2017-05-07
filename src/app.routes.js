@@ -14,6 +14,6 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state({
       name: 'login',
       url: '/',
-      component: 'login'
+      component: 'loginForm'
     });
 }

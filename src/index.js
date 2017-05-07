@@ -11,15 +11,11 @@ import 'admin-lte/dist/css/skins/_all-skins.min.css';
 import 'admin-lte/plugins/iCheck/square/blue.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import { App } from './app/containers/app';
-import { Login } from './app/containers/login/login';
-import { Button } from "./app/components/button/button";
+import components from './app/components/components';
+import containers from './app/containers/containers';
 import routesConfig from './app.routes';
 import runConfig from './app.run';
 
-angular.module('homeControl', ['ui.router', 'ui.grid'])
-  .component('app', App)
-  .component('login', Login)
-  .component('cmpButton', Button)
+angular.module('homeControl', ['ui.router', 'ui.grid', components, containers])
   .config(routesConfig)
   .run(runConfig);

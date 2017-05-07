@@ -10,6 +10,6 @@ export const Button = {
   controller: ButtonController,
   bindings: {
     label: '@',
-    class: '@'
+    btnClass: '@'
   }
 };
