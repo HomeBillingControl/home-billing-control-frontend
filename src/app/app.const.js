@@ -8,6 +8,8 @@ class SystemConsts {
 
   init() {
     this.appName = 'Home Billing Control';
+    this.profile = 'http://github.com/csvinhal';
+    this.version = '1.0.0';
     this.bodyClass = '';
   }
 }
