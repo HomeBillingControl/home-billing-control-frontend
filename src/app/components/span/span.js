@@ -9,6 +9,7 @@ export const Span = {
   template: require('./span.html'),
   controller: SpanController,
   bindings: {
-    spanClass: "@"
+    spanClass: "@",
+    spanValue: "@"
   }
 };
