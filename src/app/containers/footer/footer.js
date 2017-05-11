@@ -16,5 +16,9 @@ export default class FooterController {
 export const Footer = {
   template: require('./footer.html'),
   controller: FooterController,
-  bindings: {}
+  bindings: {
+    footerDes: '@',
+    divClass: '@',
+    footerClass: '@'
+  }
 };

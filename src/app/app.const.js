@@ -8,9 +8,9 @@ class SystemConsts {
 
   init() {
     this.appName = 'Home Billing Control';
-    this.bodyClass = '';
-    this.version = '1.0.0';
     this.gitHub = 'https://github.com/csvinhal';
+    this.version = '1.0.0';
+    this.bodyClass = '';
   }
 }
 
