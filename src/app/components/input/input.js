@@ -13,6 +13,8 @@ export const Input = {
     inputClass: "@",
     spanClass: "@",
     holder: "@",
-    type: "@"
+    type: "@",
+    name: "@",
+    inputValue: "="
   }
 };

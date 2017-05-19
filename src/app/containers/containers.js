@@ -8,6 +8,7 @@ import {Header} from "./header/header";
 import {Footer} from "./footer/footer";
 import {Sidebar} from './sidebar/sidebar';
 import {SidebarMenu} from './sidebar/side-bar-menu/side-bar-menu';
+import {Register} from "./register/register";
 
 export default angular
   .module('containers', ['ui.router'])
@@ -18,4 +19,5 @@ export default angular
   .component('footerForm', Footer)
   .component('sidebarForm', Sidebar)
   .component('sidebarMenuForm', SidebarMenu)
+  .component('registerForm', Register)
   .name;

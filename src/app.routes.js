@@ -8,9 +8,9 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
   $locationProvider.html5Mode(false);
   /*$locationProvider.html5Mode({
-    enabled: false,
-    requireBase: true
-  }).hashPrefix('!');*/
+   enabled: false,
+   requireBase: true
+   }).hashPrefix('!');*/
 
   $stateProvider
     .state({
@@ -22,5 +22,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       name: 'home',
       url: '/home',
       component: 'homeForm'
+    })
+    .state({
+      name: 'register',
+      url: '/register',
+      component: 'registerForm'
     });
 }

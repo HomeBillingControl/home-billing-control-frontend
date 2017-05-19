@@ -1,4 +1,4 @@
 <div ng-class="$ctrl.divClass">
-    <input type="{{$ctrl.type}}" ng-class="$ctrl.inputClass" placeholder="{{$ctrl.holder}}" />
+    <input ng-model="$ctrl.inputValue" name="{{$ctrl.name}}" type="{{$ctrl.type}}" ng-class="$ctrl.inputClass" placeholder="{{$ctrl.holder}}" />
     <cmp-span ng-if="$ctrl.spanClass" span-class="{{$ctrl.spanClass}}"></cmp-span>
 </div>
