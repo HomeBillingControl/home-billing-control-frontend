@@ -15,6 +15,7 @@ export const Input = {
     holder: "@",
     type: "@",
     name: "@",
-    inputValue: "="
-  }
+    inputValue: "=",
+  },
+  transclude: true
 };

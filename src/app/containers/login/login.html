@@ -7,40 +7,22 @@
         <p class="login-box-msg">{{$ctrl.msg}}</p>
 
         <form method="post">
-            <cmp-input type="email" div-class="form-group has-feedback" input-class="form-control" holder="Email"
-                       span-class="glyphicon glyphicon-envelope form-control-feedback"></cmp-input>
+            <cmp-input type="email" div-class="form-group has-feedback" input-class="form-control" holder="Email">
+                <cmp-span span-class="glyphicon glyphicon-envelope form-control-feedback"></cmp-span>
+            </cmp-input>
 
-            <cmp-input type="password" div-class="form-group has-feedback" input-class="form-control" holder="Password"
-                       span-class="glyphicon glyphicon-lock form-control-feedback"></cmp-input>
+            <cmp-input type="password" div-class="form-group has-feedback" input-class="form-control" holder="Password">
+                <cmp-span span-class="glyphicon glyphicon-lock form-control-feedback"></cmp-span>
+            </cmp-input>
             <div class="row">
-                <div class="col-xs-8">
-                    <div class="checkbox iCheck">
-                        <label>
-                            <div class="icheckbox_square-blue">
-                                <input type="checkbox"> Remember Me
-                            </div>
-                        </label>
-                    </div>
-                </div>
                 <!-- /.col -->
-                <div class="col-xs-4">
-                        <cmp-button label="Sign In" btn-class="btn btn-primary btn-block btn-flat" bnt-action="$ctrl.login"></cmp-button>
+                <div class="col-xs-4 pull-right">
+                    <cmp-button label="Sign In" btn-class="btn btn-primary btn-block btn-flat"
+                                bnt-action="$ctrl.login"></cmp-button>
                 </div>
                 <!-- /.col -->
             </div>
         </form>
-
-        <div class="social-auth-links text-center">
-            <p>- OR -</p>
-            <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in
-                using
-                Facebook</a>
-            <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in
-                using
-                Google+</a>
-        </div>
-        <!-- /.social-auth-links -->
-
         <a href="#">I forgot my password</a><br>
         <a ui-sref="register" class="text-center">Register a new membership</a>
 
