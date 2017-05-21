@@ -5,7 +5,7 @@ export default routesConfig;
 
 /** @ngInject */
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/login');
   $locationProvider.html5Mode(false);
   /*$locationProvider.html5Mode({
    enabled: false,
@@ -15,17 +15,29 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state({
       name: 'login',
-      url: '/',
-      component: 'loginForm'
-    })
-    .state({
-      name: 'home',
-      url: '/home',
-      component: 'homeForm'
+      url: '/login',
+      views: {
+        "root": {
+          component: 'loginForm'
+        }
+      }
     })
     .state({
       name: 'register',
       url: '/register',
-      component: 'registerForm'
+      views: {
+        "root": {
+          component: 'registerForm',
+        }
+      }
+    })
+    .state({
+      name: 'app',
+      url: '/',
+      views: {
+        "root": {
+          component: 'homeForm',
+        }
+      }
     });
 }

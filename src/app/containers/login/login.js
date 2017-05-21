@@ -12,7 +12,7 @@ class LoginControler {
   }
 
   login() {
-    this._$state.go('home');
+    this._$state.go('app');
   }
 }
 
