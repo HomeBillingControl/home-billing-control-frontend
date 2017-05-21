@@ -39,5 +39,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
           component: 'homeForm',
         }
       }
+    })
+    .state({
+      name: 'app.account',
+      url: 'account',
+      component: 'accountForm',
     });
 }

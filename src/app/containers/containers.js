@@ -1,14 +1,15 @@
 /**
  * Created by crist on 06/05/2017.
  */
-import {Login} from "./login/login";
-import {Home} from "./home/home";
-import {Content} from "./content/content";
-import {Header} from "./header/header";
-import {Footer} from "./footer/footer";
+import {Login} from './login/login';
+import {Home} from './home/home';
+import {Content} from './content/content';
+import {Header} from './header/header';
+import {Footer} from './footer/footer';
 import {Sidebar} from './sidebar/sidebar';
 import {SidebarMenu} from './sidebar/side-bar-menu/side-bar-menu';
-import {Register} from "./register/register";
+import {Register} from './register/register';
+import {Account} from './account/accountForm';
 
 export default angular
   .module('containers', ['ui.router'])
@@ -20,4 +21,5 @@ export default angular
   .component('sidebarForm', Sidebar)
   .component('sidebarMenuForm', SidebarMenu)
   .component('registerForm', Register)
+  .component('accountForm', Account)
   .name;
